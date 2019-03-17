@@ -89,7 +89,7 @@ class HomeIndex extends React.Component {
 
                     <section id="one">
                         <header id="major">
-                            <h2>Hi, I&apos;m Hannah Rose.</h2>
+                            <h2>Hi, I&apos;m Hannah.</h2>
                         </header>
                         <p>My career path into software development has been non-traditional, diverse, and insightful. With a vast set of experiences including a degree in business management, living around the world, teaching, owning a small food business, managing at a local food cooperative, even farming, I think I would bring a new and interesting perspective to the coding world. My desire has always been to find a career where my apt for mathematics and creativity could be used, paired with an intrigue for learning languages. I am elated to enter into a career after a long search, that challenges and fits me so perfectly.</p>
                         <p>As a long term goal I would love to be part of a team bridging the gap between agriculture and technology, working to solve highly potential global food shortages we face in the future. But on this journey, more than anything, I wish to be apart of a company seeking to make a positive difference in the customers they serve and hope to learn as much as I can in computer software along the way.</p>
