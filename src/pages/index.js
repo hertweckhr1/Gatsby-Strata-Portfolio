@@ -20,12 +20,12 @@ import full05 from '../assets/images/fulls/05.jpg'
 import full06 from '../assets/images/fulls/06.jpg'
 
 const DEFAULT_IMAGES = [
-    { id: '1', src: full01, thumbnail: thumb01, caption: 'Photo 1', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '2', src: full02, thumbnail: thumb02, caption: 'Photo 2', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '3', src: full03, thumbnail: thumb03, caption: 'Photo 3', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '4', src: full04, thumbnail: thumb04, caption: 'Photo 4', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '5', src: full05, thumbnail: thumb05, caption: 'Photo 5', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '6', src: full06, thumbnail: thumb06, caption: 'Photo 6', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'}
+    { id: '1', src: full01, thumbnail: thumb01, caption: 'FoodCycle', description: 'Mobile Application dedicated to reducing food waste using react-native.', link: <a href="https://www.youtube.com/watch?v=HiiiZmzyO-U&t=38s">Video Demo</a>},
+    { id: '2', src: full02, thumbnail: thumb02, caption: 'Spaghettsi', description: 'Two Week Group Project Completing E-Commerce Website using Ruby on Rails.', link: <a href="https://spagh-ettsi.herokuapp.com/">Website</a>},
+    { id: '3', src: full03, thumbnail: thumb03, caption: 'MediaRanker', description: 'Rails Project with learning goals focused on controllers and routes.', link: <a href="https://github.com/hertweckhr1/MediaRanker">Github</a> },
+    { id: '4', src: full04, thumbnail: thumb04, caption: 'VideoStore', description: 'Pair Project working with internal and external APIs to create VideoStore Application.', link: <a href="http://retro_videostore.surge.sh/">Website</a>},
+    { id: '5', src: full05, thumbnail: thumb05, caption: 'Inspiration Board', description: 'Application in React creating http requests to API.', link: <a href="http://inspiration-board.surge.sh/">Website</a>},
+    { id: '6', src: full06, thumbnail: thumb06, caption: 'API Muncher', description: 'Project Focused on grabbing recipe information from External API.', link: <a href="https://muncher-mania.herokuapp.com/">Website</a>}
 ];
 
 class HomeIndex extends React.Component {
@@ -75,8 +75,8 @@ class HomeIndex extends React.Component {
     }
 
     render() {
-        const siteTitle = "Gatsby Starter - Strata"
-        const siteDescription = "Site description"
+        const siteTitle = "HannahvanSeeters"
+        const siteDescription = "Portfolio"
 
         return (
             <Layout>
@@ -88,67 +88,33 @@ class HomeIndex extends React.Component {
                 <div id="main">
 
                     <section id="one">
-                        <header className="major">
-                            <h2>Ipsum lorem dolor aliquam ante commodo<br />
-                            magna sed accumsan arcu neque.</h2>
+                        <header id="major">
+                            <h2>Hi, I&apos;m Hannah.</h2>
                         </header>
-                        <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
+                        <p>My career path into software development has been non-traditional, diverse, and insightful. With a vast set of experiences including a degree in business management, living around the world, teaching, owning a small food business, managing at a local food cooperative, even farming, I think I would bring a new and interesting perspective to the coding world. My desire has always been to find a career where my apt for mathematics and creativity could be used, paired with an intrigue for learning languages. I am elated to enter into a career after a long search, that challenges and fits me so perfectly.</p>
+                        <p>As a long term goal I would love to be part of a team bridging the gap between agriculture and technology, working to solve highly potential global food shortages we face in the future. But on this journey, more than anything, I wish to be apart of a company seeking to make a positive difference in the customers they serve and hope to learn as much as I can in computer software along the way.</p>
                         <ul className="actions">
-                            <li><a href="#" className="button">Learn More</a></li>
+                            <li><a href="https://gist.github.com/hertweckhr1/960813de7084e57a958f8624ac90cdc6" className="button">See My Resume</a></li>
                         </ul>
                     </section>
 
                     <section id="two">
                         <h2>Recent Work</h2>
 
-                        <Gallery images={DEFAULT_IMAGES.map(({ id, src, thumbnail, caption, description }) => ({
+                        <Gallery images={DEFAULT_IMAGES.map(({ id, src, thumbnail, caption, description, link }) => ({
                             src,
                             thumbnail,
                             caption,
-                            description
+                            description,
+                            link
                         }))} />
 
                         <ul className="actions">
-                            <li><a href="#" className="button">Full Portfolio</a></li>
+                            <li><a href="https://gist.github.com/hertweckhr1/" className="button">My Github</a></li>
                         </ul>
                     </section>
 
-                    <section id="three">
-                        <h2>Get In Touch</h2>
-                        <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
-                        <div className="row">
-                            <div className="8u 12u$(small)">
-                                <form method="post" action="#">
-                                    <div className="row uniform 50%">
-                                        <div className="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
-                                        <div className="6u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
-                                        <div className="12u"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-                                    </div>
-                                </form>
-                                <ul className="actions">
-                                    <li><input type="submit" value="Send Message" /></li>
-                                </ul>
-                            </div>
-                            <div className="4u 12u$(small)">
-                                <ul className="labeled-icons">
-                                    <li>
-                                        <h3 className="icon fa-home"><span className="label">Address</span></h3>
-                                        1234 Somewhere Rd.<br />
-                                        Nashville, TN 00000<br />
-                                        United States
-                                    </li>
-                                    <li>
-                                        <h3 className="icon fa-mobile"><span className="label">Phone</span></h3>
-                                        000-000-0000
-                                    </li>
-                                    <li>
-                                        <h3 className="icon fa-envelope-o"><span className="label">Email</span></h3>
-                                        <a href="#">hello@untitled.tld</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
+
 
                 </div>
 
